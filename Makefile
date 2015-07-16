@@ -2,8 +2,8 @@
 # See the file COPYING for copying permission.
 
 TARGET = psheet
-OBJS = psheet.o
+OBJS = psheet.o imports.o
 
-LIBS =
+LIBS = -lIoFileMgrForKernel -lSysMemForKernel
 
 include ../../lib/build.mak
